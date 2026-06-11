@@ -149,6 +149,9 @@ const products = [
   },
 ];
 
+// Base path for GitHub Pages deployment
+const basePath = "/SaaS-Marketing-site";
+
 export default function Home() {
   const darkModeRef = useRef(false);
   const [darkMode, setDarkMode] = useState(false);
@@ -204,7 +207,7 @@ export default function Home() {
             {/* Logo */}
             <a href="#home" className="flex items-center gap-3 group">
               <img
-                src="/logo.png"
+                src={`${basePath}/logo.png`}
                 alt="ZIPCARTCO Logo"
                 className="h-9 w-9 rounded-lg transition-transform group-hover:scale-110"
               />
@@ -382,7 +385,7 @@ export default function Home() {
               <div className="relative animate-fade-in-up animation-delay-300 hidden lg:block">
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-border/50">
                   <img
-                    src="/hero-image.jpg"
+                    src={`${basePath}/hero-image.jpg`}
                     alt="ZIPCARTCO Global Network"
                     className="w-full h-[480px] object-cover"
                   />
@@ -600,7 +603,7 @@ export default function Home() {
                   <CardContent className="p-0">
                     <div className="relative">
                       <img
-                        src="/sidebar-image.jpg"
+                        src={`${basePath}/sidebar-image.jpg`}
                         alt="Business partnership"
                         className="w-full h-[400px] object-cover"
                       />
@@ -817,7 +820,7 @@ export default function Home() {
             <div className="sm:col-span-2 lg:col-span-1 space-y-4">
               <a href="#home" className="flex items-center gap-3">
                 <img
-                  src="/logo.png"
+                  src={`${basePath}/logo.png`}
                   alt="ZIPCARTCO Logo"
                   className="h-8 w-8 rounded-lg"
                 />
